@@ -18,7 +18,6 @@ class PlatformDeviceIdWebPlugin extends PlatformDeviceIdPlatform {
   /// Returns a [String?] containing the ua of the web.
   @override
   Future<String?> getDeviceId() async {
-    String? version = web.window.navigator.userAgent;
-    return Future.value(version);
+    return Future.value( web.window.navigator.userAgent);
   }
 }
